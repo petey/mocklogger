@@ -7,6 +7,7 @@ shared:
 
 jobs:
     main:
+        description: a series of log generation
         steps:
             - short: ./mocklog --lines 10
             - medium: ./mocklog --lines 150 --group 50
@@ -14,6 +15,7 @@ jobs:
             - immediate: ./mocklog
 
     two:
+        description: another series of log generation
         steps:
             - short: ./mocklog --lines 10
             - medium: ./mocklog --lines 150 --group 50
@@ -21,6 +23,7 @@ jobs:
             - immediate: ./mocklog
 
     three:
+        description: a third series of log generation
         steps:
             - short: ./mocklog --lines 10
             - medium: ./mocklog --lines 150 --group 50
