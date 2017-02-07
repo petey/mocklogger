@@ -12,6 +12,7 @@ jobs:
             - medium: ./mocklog --lines 150 --group 50
             - long: ./mocklog --lines 600 --time 2 --group 150
             - immediate: ./mocklog
+            - linebreaks: echo hello\nhello\nhello\nhello\nhello\nhello\nhello\n\n\n\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello\nhello
 
     two:
         steps:
