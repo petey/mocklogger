@@ -18,3 +18,7 @@ jobs:
     three:
         requires:
             - two
+            
+    four:
+        requires:
+            - two
