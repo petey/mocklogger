@@ -14,8 +14,6 @@ jobs:
     two:
         requires:
             - main
-        steps:
-           - failfast: exit 1
 
     three:
         requires:
@@ -24,3 +22,12 @@ jobs:
         requires:
             - two
             - three
+
+    detached-one: {}
+    detached-two:
+        requires:
+            - detached-one
+    detached-three:
+        requires:
+            - detached-two
+         
