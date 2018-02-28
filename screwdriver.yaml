@@ -11,6 +11,7 @@ jobs:
         requires: 
             - ~commit
             - ~pr
+            - ~sd@2:main
     two:
         requires:
             - main
